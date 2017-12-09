@@ -1,0 +1,66 @@
+
+h1, h2 {
+    font-family: 'Spectral SC', serif;
+
+}
+
+p, a, nav, figcaption, footer {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0px;
+    color: #666;
+    background-color: #f8f8f0;
+}
+
+#header {
+    background-color: silver;
+    margin: 10px;
+    height: 90px;
+    border-radius: 5px;
+}
+
+#navbar {
+    background-color: silver;
+    margin: 10px;
+    height: 35px;
+    border-radius: 5px;   
+}
+
+nav ul {
+    margin: 0px auto;
+    
+   
+}
+
+nav li  {
+    display: inline;    
+    margin-right: 40 px;
+    padding: 10px;
+}
+
+
+
+a {
+    color: chocolate; 
+    text-decoration: none;    
+}
+
+a:hover {
+    color: #66cc66;
+}
+
+nav li a:hover {
+    color: #666;
+}
+
+.container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    opacity: 0.5;
+}
