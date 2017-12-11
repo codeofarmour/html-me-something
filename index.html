@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Walking the Way</title>   
+    <title>Walking the Way - Home</title>   
     <meta charset="UTF-8">
  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->    
     <!-- Bootstrap core CSS -->
@@ -12,21 +12,34 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
-        @import url('https://fonts.googleapis.com/css?family=Open+Sans|Spectral+SC');
-        
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans|Spectral+SC');       
     </style>
-</head>
-<body>
+    <body></body>
     <header class="container">
         <div class="row">
-            <h1 class="col-sm-8">Journey to the End of the World</h1>
-            <nav class="col-sm-4 text-right"></nav>
-              <p class="btn btn-info" href="#" role="button">Who</p>
-              <p class="btn btn-info" href="#" role="button">What</p>
-              <p class="btn btn-info" href="#" role="button">Why</p>
-              <p class="btn btn-info" href="#" role="button">When</p>
-              <p class="btn btn-info" href="#" role="button">Where</p>
-              <a class="btn btn-info" href="mailto: codeofarmour@outlook.com">Contact</a>
+            <div id="top"></div>
+            <h1 class="col-sm-8" id="top">Journey to the End of the World</h1>
+<!--test--> <div class="col-sm-1 text-right dropdown">
+                <button class="btn btn-default dropdown toggle" data-toggle="dropdown">
+                    Links<span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                        <li><a href="http://sometimesshetravels.com/" target="_blank">Sometimes She Travels</a></li>
+                        <li><a href="http://home.michaelgeorgephoto.com/portrait-of-a-pilgrim" target="_blank">Portrait of a Pilgrim</a></li>
+                        <li><a href="http://johnniewalker-santiago.blogspot.com/" target="blank">Johnnie Walker</a></li>
+                        <li><a href="http://www.30daystosantiago.com/" target="_blank">30 Days to Santiago</a></li>
+                        <li><a href="https://www.caminodesantiago.me/" target="_blank">Camino de Santiago</a></li>
+                        <li><a href="http://www.americanpilgrims.org/" target="_blank">American Pilgrims on the Camino</a></li>
+                        <li><a href="https://caminoways.com/" target="_blank">CaminoWays</a></li>
+                        <li><a href="https://www.lonelyplanet.com/spain/travel-tips-and-articles/walking-the-camino-our-tips/40625c8c-8a11-5710-a052-1479d27753f0" target="blank">Lonely Planet</a></li>
+                        <li><a href="https://www.outsideonline.com/1917861/walking-camino-de-santiago-beginners-guide" target="_blank">Outside Online</a></li>     
+                </ul>
+            </div>
+            <nav class="col-sm-3 text-right"></nav>
+                <a class="btn btn-info" href="index.html" role="button">Home</a>            
+                <a class="btn btn-info" href="index2.html" role="button">Who / What / When / Where</a>
+                <a class="btn btn-info" href="why.html" role="button">Why</a>                
+                <a class="btn btn-info" href="mailto: codeofarmour@outlook.com">Contact</a>
             </nav>
         </div>
     </header>
@@ -35,50 +48,42 @@
             <div class="row text-center">
                 <h2>"You don't choose a life. You live one."</h2>
                 <h3>A pilgrim's tale in pictures</h3>
-                <a class="btn btn-primary" href="#" role="button">Begin</a>
+                <a class="btn btn-primary" href="index2.html" role="button">Begin</a>
             </div>
         </div>
     </section>
     <section class="container">
         <div class="row">
             <figure class="col-sm-6">
-                <p>Alone isn't Lonely</p>
-                <img src="https://images.pexels.com/photos/52062/pexels-photo-52062.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb">                
+                <p>Alone isn't lonely</p>
+                <img src="img/quiet_pasture.jpg">                
             </figure>
             <figure class="col-sm-6">
                 <p>Walking the Tao</p>
-                <img src="https://images.pexels.com/photos/458918/pexels-photo-458918.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb">
+                <img src="img/camino_trail.jpg">
             </figure>
         </div>
         <div class="row">
             <figure class="col-sm-6">
                 <p>One step at a time</p>
-                <img src="https://cdn.pixabay.com/photo/2015/05/14/17/22/feet-767045_1280.jpg">
+                <img src="img/ontheroadagain.jpg">
             </figure>
             <figure class="col-sm-6">
-                <p>Wake and Walk</p>
-                <img src="https://images.pexels.com/photos/533759/pexels-photo-533759.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb">
+                <p>Wake and walk</p>
+                <img src="img/cloudymtn.jpg">
             </figure>
         </div>
     </section>
     <footer class="container">
         <div class="row">
             <p class="col-sm-4">&copy; Terri Riggle, 2017</p>
-            <ul class="col-sm-8">
-                <li class="col-sm-8">cover pics courtesy of: <a href="www.pexels.com" target="_blank">pexels.com </a> !</li>
-            </ul>
-            
-            
-        <!--    <ul class="col-sm-8">
-                <li class="btn btn ><a href="https://twitter.com/codeofarmour?ref_src=twsrc%5Etfw" class="twitter-follow-button" 
-                data-show-count="false">Follow @codeofarmour</a><script async src="https://platform.twitter.com/widgets.js" 
-                charset="utf-8"></script>
-            </li> -->                        
+            <p class="col-sm-8" class="btn btn-primary"><a href="#top" role="button">Top</a></p>
+        </div>                           
     </footer>    
 <!-- JQuery (needed for Bootstrap's Java plugins) -->
+<script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Bootsrap Javascript plugin file -->
-
+<script src="https://www.w3schools.com/lib/w3.js"></script> 
 <script src="../..dist/js/bootstrap.min.js"></script>
 <!--IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
