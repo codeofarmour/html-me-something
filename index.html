@@ -3,44 +3,41 @@
 <head>
     <title>Walking the Way - Home</title>   
     <meta charset="UTF-8">
- <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
     crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet" rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
-        @import url('https://fonts.googleapis.com/css?family=Open+Sans|Spectral+SC');       
-    </style>
-    <body></body>
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">    
+     
+    <body>
     <header class="container">
         <div class="row">
-            <div id="top"></div>
+           <!-- <div id="top"></div> -->
             <h1 class="col-sm-8" id="top">Journey to the End of the World</h1>
-<!--test--> <div class="col-sm-1 text-right dropdown">
-                <button class="btn btn-default dropdown toggle" data-toggle="dropdown">
-                    Links<span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                        <li><a href="http://sometimesshetravels.com/" target="_blank">Sometimes She Travels</a></li>
-                        <li><a href="http://home.michaelgeorgephoto.com/portrait-of-a-pilgrim" target="_blank">Portrait of a Pilgrim</a></li>
-                        <li><a href="http://johnniewalker-santiago.blogspot.com/" target="blank">Johnnie Walker</a></li>
-                        <li><a href="http://www.30daystosantiago.com/" target="_blank">30 Days to Santiago</a></li>
-                        <li><a href="https://www.caminodesantiago.me/" target="_blank">Camino de Santiago</a></li>
-                        <li><a href="http://www.americanpilgrims.org/" target="_blank">American Pilgrims on the Camino</a></li>
-                        <li><a href="https://caminoways.com/" target="_blank">CaminoWays</a></li>
-                        <li><a href="https://www.lonelyplanet.com/spain/travel-tips-and-articles/walking-the-camino-our-tips/40625c8c-8a11-5710-a052-1479d27753f0" target="blank">Lonely Planet</a></li>
-                        <li><a href="https://www.outsideonline.com/1917861/walking-camino-de-santiago-beginners-guide" target="_blank">Outside Online</a></li>     
-                </ul>
-            </div>
-            <nav class="col-sm-3 text-right"></nav>
-                <a class="btn btn-info" href="index.html" role="button">Home</a>            
+            <nav class="col-sm-3 text-right"></nav>                            
                 <a class="btn btn-info" href="index2.html" role="button">Who / What / When / Where</a>
-                <a class="btn btn-info" href="why.html" role="button">Why</a>                
+                <a class="btn btn-info" href="why.html" role="button">Why</a>
+                <!--<a class="btn btn-info" href="index.html" option value="">Links</option> </a> -->                              
                 <a class="btn btn-info" href="mailto: codeofarmour@outlook.com">Contact</a>
             </nav>
+            <select name="menu1" id="menu1">
+                    <option value="#">Links</option>
+                    <option value="http://sometimesshetravels.com/">Sometimes She Travels</option>
+                    <option value="http://home.michaelgeorgephoto.com/portrait-of-a-pilgrim">Portrait of a Pilgrim</option>
+                    <option value="http://johnniewalker-santiago.blogspot.com/">Johnnie Walker</option>
+                    <option value="http://www.30daystosantiago.com/">30 Days to Santiago</option>
+                    <option value="http://www.americanpilgrims.org/">Camino de Santiago</option>
+                    <option value="https://www.caminodesantiago.me/">American Pilgrims</option>
+                    <option value="https://caminoways.com/">CaminoWays</option>
+                    </select>
+                    <script type="text/javascript">
+                     var urlmenu = document.getElementById( 'menu1' );
+                     urlmenu.onchange = function() {
+                          window.open( this.options[ this.selectedIndex ].value );
+                     };
+                    </script>
         </div>
     </header>
     <section class="jumbotron">
@@ -52,6 +49,7 @@
             </div>
         </div>
     </section>
+
     <section class="container">
         <div class="row">
             <figure class="col-sm-6">
@@ -72,6 +70,7 @@
                 <p>Wake and walk</p>
                 <img src="img/cloudymtn.jpg">
             </figure>
+
         </div>
     </section>
     <footer class="container">
@@ -85,12 +84,10 @@
         </div>                               
     </footer> 
 
-<!-- JQuery (needed for Bootstrap's Java plugins) -->
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://www.w3schools.com/lib/w3.js"></script> 
 <script src="../..dist/js/bootstrap.min.js"></script>
-<!--IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>

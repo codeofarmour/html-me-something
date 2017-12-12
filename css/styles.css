@@ -3,10 +3,13 @@
   }
 
   body {
-    font-family: "Shadows Into Light", "Garamond", serif;
-    background-color: oldlace;
+    font-family: "Shadows Into Light", "Garamond", serif;   
     font-size: 24px;
     background-image: url('https://images.pexels.com/photos/242236/pexels-photo-242236.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb');
+  }
+
+  p {
+    font-family: 'Shadows Into Light Two', 'Verdana', sans-serif;
   }
   
   header {
@@ -24,11 +27,22 @@
   header h1 {
     font-weight: 700;
     margin: 0;
+    color: #000000;
   }
   
   header nav {
     display: flex;
     justify-content: flex-end;
+  }
+
+  #menu1 {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Shadows Into Light', 'Garamond', serif;
+    font-size: 14px;
+    font-weight: bolder;
+    border-radius: 5px;
+    width: 100px;
   }
   
   header p {
@@ -42,12 +56,8 @@
       background-size: cover;
       color: #ffffff;
       height: 500px;
-      text-shadow: 0.25px 0.25px 0.25px #000000;
-     /* margin: 0 auto;*/
-      max-width: 100%;
-      /*top: 10%;
-      left: 10%;
-      border-radius: 5px;*/
+      text-shadow: 0.25px 0.25px 0.25px #000000;     
+      max-width: 100%;      
       box-shadow: 0 3px 6px rgba(0,0,0,0.9);
       border-radius: 15px;
     }
@@ -72,15 +82,13 @@
 
     h2 {
       font-weight: bold;
+      color: #4682b4;
     }
        
     section .row img {
       margin: 0 0 30px;
-      width: 100%;
-      /*margin: 0 auto;*/
-      max-width: 100%;
-      /*top: 10%;
-      left: 10%;*/
+      width: 100%;      
+      max-width: 100%;      
       border-radius: 5px;
       box-shadow: 0 3px 6px rgba(0,0,0,0.9);
     }
@@ -94,6 +102,12 @@
       margin: 0 0 30px;            
     }
 
+    .col-sm-6 p{
+      font-family: 'Shadows Into Light', 'Verdana', serif;
+      font-size: 16px;
+      font-weight: bolder;
+    }
+
     #next {
       text-align: right;
     }
@@ -104,17 +118,17 @@
       color: #000000;
       font-weight: bold;
       text-shadow: none;
-      background-color: #ffffff;
+      background-color: #4682b4;
     }
     
     .btn.btn-primary:hover {
-      color: #ffffff;
-      background-color: #fbd1d5;
+      color: #000000;
+      background-color: #ffffff;
     }
     
     .btn-secondary {
-      background-color: #E8DFE0;
-      color: #ffffff;
+      background-color: #4682b4;
+      color: #000000;
       margin: 0 0 30px;
     }
   
@@ -124,23 +138,19 @@
       color: #000000;
       font-weight: bold;
       text-shadow: none;
-      background-color: #ffffff;
+      background-color: steelblue;
       margin-right: 10px; 
     }
   
     .btn.btn-info:hover {
-        color: #ffffff;
-        background-color:#fbd1d5;
+        color: #000000;
+        background-color: #ffffff;
     }
     
     footer {
       font-size: 16px;
       padding: 20px 0;
     }
-
-    /*footer #top {
-      float: right;
-    } */
     
     footer .col-sm-8, footer .btn {
       display: inline;
@@ -149,14 +159,5 @@
     
     footer ul {
       list-style: none;
-    }
-
-    #last {
-      visibility: hidden;
-    }
-    
-    footer li img {
-      width: 32px;
-      height: 32px;
     }
   
